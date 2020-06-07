@@ -1,0 +1,224 @@
+/* Grid options*/
+body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15vw 25vw 2vw 2vw;
+    grid-gap: 1em;
+    margin: 0em;
+    max-width: 95%;
+  }
+/* Grid options- end*/
+
+/* Page loader options*/
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    animation: loader 2s infinite ease;
+    border: 20px solid;
+    border-radius: 50%;
+    border-top: solid white;
+    border-bottom: solid white; 
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 10s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+
+  /* Page loader options- end*/
+
+
+  
+  header,
+  footer {
+    grid-column: 1 / 1 span;
+    grid-row: 1;
+  }
+  
+  phone {
+
+    grid-column: 1 / 4 span;
+    text-align: center;
+    grid-row: 1;
+}
+
+
+  body {
+    padding: 1em 0;
+  }
+  
+  header{
+    background: white
+    display: flex;
+  }
+
+  footer {
+
+    grid-column: 1 / 4 span;
+    grid-row: 4;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+
+  }
+
+  main {
+
+    grid-column: 2 / 2 span ;
+    text-align: center;
+    position: relative;
+    left: 60px;
+
+  }
+
+  some {
+
+    grid-column: 4  ;
+    grid-row: 2; 
+    transform: rotate(90deg);
+
+
+  }
+/* Style for menu bar */
+  aside {
+
+    grid-column: 1 / 1 span;
+    text-align: left;
+    padding-left: 0px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+
+  }
+    .phone {
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px; 
+        color: rgb(255, 34, 34);
+         
+
+    }
+
+    .work {
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px;
+        color: rgb(255, 34, 34);  
+    }
+
+  .name {
+
+    width: 75%;
+    position: relative;
+    bottom: 60px;
+    left: 16px;
+    margin-top: 5px;
+  }
+  
+    .name2 {
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 20px;
+      position: relative;
+      bottom: 103px;
+      right: 19px;
+  
+    }
+
+
+
+    .vertical-menu {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+      }
+      
+      .vertical-menu a {
+        background-color: rgba(255, 255, 255, 0); /* white background color */
+        color: black; /* Black text color */
+        display: block; /* Make the links appear below each other */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove underline from links */
+        text-align: left;
+      }
+
+      /* Menu bar style- end*/
+
+      .SOME {
+
+        font-family: 'Bebas Neue', cursive; ;
+        font-size: 25px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 34, 34);
+
+
+      }
+
+      .maintext {
+
+        color: rgb(255, 34, 34);
+        font-family: 'Bebas Neue', cursive; ;
+        font-size: 60px;
+
+
+      }
+
+      .btn {
+        cursor: pointer;
+        background: transparent;
+        outline: none;
+        transition: 0.5s ease-in-out;
+      }
+      
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: 0.5s ease-in-out;
+      }
+      
+      .btn:hover {
+        transition: 0.5s ease-in-out;
+        background: rgb(235, 56, 56);
+        color: white;
+      }
+      
+      .btn:hover svg {
+        stroke-dashoffset: -480;
+      }
+@media only screen and (max-width:500px) {
+
+  /* For mobile phones- coming soon */
