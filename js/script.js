@@ -1,0 +1,1 @@
+/* Script codes are in HTML file */
